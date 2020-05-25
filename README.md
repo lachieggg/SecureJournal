@@ -17,7 +17,6 @@ And then, using pip:
 
 That _should_ do it. 
 To get started, run:
-`touch mySecureJournal`
 
 `python script.py mySecureJournal` 
 
