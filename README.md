@@ -1,2 +1,2 @@
 # SecureJournal
-A Python based script intended for encrypting a journal
+A Python script intended for encrypting a journal
