@@ -2,7 +2,9 @@
 
 import sys
 import os
-sys.path.insert(1, '/mnt/d/Journal/lib/')
+
+sys.path.insert(1, os.getcwd()+'/lib/')
+
 
 from shared import *
 from finishing import *
