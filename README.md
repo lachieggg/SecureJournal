@@ -22,4 +22,12 @@ Once you are done:
 
 `python script.py mySecureJournal`
 
+Then follow the prompts. Your journal will be safely encrypted.
+
+When you are ready to journal again, run:
+
+`python script.py mySecureJournal`
+
+And the script figures out the rest.
+
 Happy journalling! :-)
