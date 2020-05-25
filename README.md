@@ -16,11 +16,7 @@ And then, using pip:
 4) `pip install pygobject`
 
 That _should_ do it. 
-To get started, run:
-
-`python script.py mySecureJournal` 
-
-Then, type away using your favourite text editor!
+To get started, open up mySecureJournal in your favourite text editor, and type away!
 
 Once you are done:
 
