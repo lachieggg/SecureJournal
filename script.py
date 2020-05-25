@@ -5,7 +5,6 @@ import os
 
 sys.path.insert(1, os.getcwd()+'/lib/')
 
-
 from shared import *
 from finishing import *
 from starting import *
