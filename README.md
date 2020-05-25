@@ -1,5 +1,5 @@
 # SecureJournal
-A Python library intended for encrypting a journal
+A Python library for encrypting a journal
 
 To get started, clone. There are a couple of dependencies
 
