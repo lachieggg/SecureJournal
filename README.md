@@ -11,9 +11,9 @@ Obviously, `python` is one of those. As is `pip`.
 
 And then, using pip:
 
-`pip install cryptography`
+3) `pip install cryptography`
 
-`pip install pygobject`
+4) `pip install pygobject`
 
 That _should_ do it. 
 To get started, run:
