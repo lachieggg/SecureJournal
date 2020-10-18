@@ -31,21 +31,24 @@ def finishing(filename):
 
     print("Encoding the message")
     # Encode the message from the file in Base64
-    message = str(journal_file_contents)
+    message = str(''.join(journal_file_contents))
+
     encoded_message = message.encode()
 
     # Encrypt the message
     encrypted_message = encrypt_function.encrypt(encoded_message)
 
     # Write the encrypted file
-    outputFile = open(os.getcwd() + '/' + 'encrypted', 'w+')
+    outputFile = open(os.getcwd() + '/' + 'encrypted', 'wb')
+    print(encrypted_message)
     outputFile.write(encrypted_message)
     print("Wrote to encrypted file")
 
     # Delete the journal file
     filePath = os.getcwd() + '/' + filename
-    subprocess.check_call(["srm", filePath])
+    subprocess.check_call(["shred " + filePath + " --remove" ], shell=True)
     print("Done!")
     
 if(__name__ == "__main__"):
     finished()
+	
