@@ -5,7 +5,8 @@ To get started, clone the repo.
 
 There are a couple of meta-dependencies.
 
-`python` is one of those. As is `pip`.
+`python` is one of those (version 3.8.5 recommended). 
+`pip` is the second meta-dependency.
 
 On Ubuntu (Focal Fossa):
 ```
@@ -30,5 +31,3 @@ Your journal will be safely encrypted. When you are ready to journal again, run:
 And the script figures out the rest.
 
 Happy journalling! :-)
-
-(Recommend Python 3.8.5 for this project, as that is what I have used for testing)
