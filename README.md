@@ -1,19 +1,20 @@
 # SecureJournal
 A Python library for encrypting a journal
 
-To get started, clone. There are a couple of dependencies
+To get started, clone the repo. 
 
-Obviously, `python` is one of those. As is `pip`.
+There are a couple of meta-dependencies.
 
-1) https://www.python.org/downloads/
+`python` is one of those. As is `pip`.
 
-2) https://pypi.org/project/pip/#description
+On Ubuntu (Focal Fossa):
+```
+# sudo apt-get install python3
+# sudo apt-get install python3-pip
+```
+Now using pip:
 
-And then, using pip:
-
-3) `pip install cryptography`
-
-4) `pip install pygobject`
+`pip install -r requirements.txt` 
 
 That _should_ do it. 
 To get started, open up mySecureJournal in your favourite text editor, and type away!
