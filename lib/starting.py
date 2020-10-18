@@ -29,11 +29,15 @@ def starting(filename):
 
     # Open the encrypted file for decryption
     try:
-        encrypted_message = str(open('encrypted', 'r').readlines())
-        decrypted_message = decrypt_function.decrypt(encrypted_message)
-        decryption_array = ast.literal_eval(decrypted_message)
+        with open('encrypted', 'rb') as encrypted_data:
+            encrypted_lines = encrypted_data.read()
+
+        decrypted_message = decrypt_function.decrypt(encrypted_lines)
+
+        msg = decrypted_message.decode('ascii')
+
     except IOError as e:
-        print "Encrypted file does not exist"
+        print("Encrypted file does not exist")
         exit()
     except cryptography.fernet.InvalidToken as e:
         print("Invalid passphrase")
@@ -42,14 +46,12 @@ def starting(filename):
     print("Decrypted")
     print("Writing to plaintext file.")
 
-    outputFile = open(os.getcwd() + '/' + filename, 'w+')
-    for line in decryption_array:
-        outputFile.write(line)
+    outputFile = open(os.getcwd() + '/' + filename, 'w')
+    outputFile.write(msg)
 
-    outputFile.write("\n")
     outputFile.close()
 
-    subprocess.check_call(["srm", "encrypted"])
+    subprocess.check_call(["shred " + os.getcwd() + "/" + "encrypted" + " --remove" ], shell=True)
     print("Done. Remember to run `python finished.py` after you are done.")
     print("Happy secure writing! :-)")
 
