@@ -16,6 +16,7 @@ On Ubuntu (Focal Fossa):
 Now using pip:
 
 `pip install pygobject`
+
 `pip install cryptography` 
 
 That _should_ do it. 
