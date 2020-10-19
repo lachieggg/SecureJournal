@@ -15,7 +15,8 @@ On Ubuntu (Focal Fossa):
 ```
 Now using pip:
 
-`pip install -r requirements.txt` 
+`pip install pygobject`
+`pip install cryptography` 
 
 That _should_ do it. 
 To get started, open up mySecureJournal in your favourite text editor, and type away!
